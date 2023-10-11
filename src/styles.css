@@ -19,13 +19,7 @@ input {
     padding: 10px;
     margin-right: 0;
     font-size: 20px;
-<<<<<<< Updated upstream
-
     box-sizing: border-box;
-
-=======
-    box-sizing: border-box;
->>>>>>> Stashed changes
 }
 
 .search-content {
@@ -40,4 +34,12 @@ input {
     border: none;
     background-color: transparent;
     margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
