@@ -38,9 +38,7 @@ input {
 
 a{
     text-decoration: none;
-    
 }
-
 
 a:hover{
     text-decoration: none;
@@ -49,3 +47,8 @@ a:hover{
 .filter-option-modal{
     background-color: aqua !important;
 }
+.modal-backdrop {
+    background-color: rgba(0,0,0,.0001) !important;
+}
+
+.modal{width:102%;}
