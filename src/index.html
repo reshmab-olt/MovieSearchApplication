@@ -10,28 +10,29 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <div class="main container-fluid p-0">
         <header>
-            <div class="d-flex justify-content-between p-2">
-                
-                <div class="d-flex justify-content-start" >
+            <div class="d-flex justify-content-between px-3 pt-3 py-0">
+                <div class="d-flex justify-content-start">
                     <img src="logo.png" class="rounded-circle" height="70" alt="image">
                     <a href="#">
-                        <h1 class="ml-1">Film Buff</h1>
+                        <h1 class="ml-1 mt-2">Film Buff</h1>
                     </a>
                 </div>
-
+                <div class="filters mt-3 ml-5 pl-4">
+                    <p class="p-2">ADVENTURE</p>
+                    <p class="p-2">ACTION THRILLER</p>
+                    <p class="p-2">FEEL GOOD</p>
+                </div>
                 <div class="search-box-container">
                     <form class="form">
-
-                        <div class="modal" id="filterOptions">
-
+                        <!-- <div class="modal" id="filterOptions">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
@@ -55,9 +56,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
+                        </div> -->
                         <div class="search-content p-0">
                             <button type="button" id="filterButton" data-target="#filterOptions" data-toggle="modal">
                                 <i class="fa fa-solid fa-filter" aria-hidden="true"></i>
@@ -73,38 +72,26 @@
 
             </div>
         </header>
-
-
         <main>
-            <div>
-                <div class="search-results">
-                </div>
+            <div class="search-results">
             </div>
         </main>
-
     </div>
 </body>
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- Footer content here -->
-            </div>
-            <div class="col-md-6 text-right">
-                <!-- Add your social media icons with links -->
-                <a href="#">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
+    <div class="footer pt-2 mt-0">
+        <a href="#">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-twitter"></i>
+        </a>
 
+    </div>
+    <p class="ml-5 mb-0">Follow us on Instagram Facebook Twitter</p>
+</footer>
 
 </html>

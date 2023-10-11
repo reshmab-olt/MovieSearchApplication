@@ -75,19 +75,22 @@ input[type="checkbox"] {
 
 header {
     background-color: #2b2626de !important;
-    height: 100px;
+    /* Remove height: 100%; */
     box-sizing: border-box;
     width: 100%;
 }
-body {
-    margin: 0; 
-    padding: 0; 
-    /* background-image: url('https://chipsimages.fra1.digitaloceanspaces.com/wp-content/uploads/2015/04/07124407/Fotolia_72711898_XS.jpg'); */
+
+main {
+    height: 580px;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://chipsimages.fra1.digitaloceanspaces.com/wp-content/uploads/2015/04/07124407/Fotolia_72711898_XS.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     background-position: center;
     background-attachment: fixed;
-  }
+}
+
   #filterButton {
     font-size: 30px;
     border: none;
@@ -96,5 +99,29 @@ body {
     color: #fff; 
 }
 
-  
-  
+  .footer{
+    text-align: center;
+    margin-top: 10px;
+  }
+  i{
+    margin-left: 50px;
+  }
+
+  .filters {
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters p {
+    margin-right: 15px;
+    font-weight: 700;
+    color: rgb(236, 214, 14);;
+    font-size: larger;
+}
+
+footer p{
+    text-align: center;
+    font-size: smaller;
+    color: grey;
+}
