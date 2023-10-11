@@ -38,8 +38,14 @@ input {
 
 a{
     text-decoration: none;
+    
 }
+
 
 a:hover{
     text-decoration: none;
+}
+
+.filter-option-modal{
+    background-color: aqua !important;
 }
