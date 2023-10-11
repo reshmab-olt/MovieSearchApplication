@@ -43,12 +43,30 @@ a{
 a:hover{
     text-decoration: none;
 }
-
-.filter-option-modal{
-    background-color: aqua !important;
-}
 .modal-backdrop {
     background-color: rgba(0,0,0,.0001) !important;
 }
 
 .modal{width:102%;}
+
+input[type="checkbox"]{
+    display: block;
+    width: fit-content;
+}
+
+.modal-content{
+    width: 350px;
+    border-radius: 0 !important;
+    left: 150px;
+}
+
+.form-check{
+    margin-bottom: 10px;
+}
+
+header{
+    background-color: aqua !important;
+    height: 100px;
+    box-sizing: border-box;
+    width: 100%;
+}
