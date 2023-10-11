@@ -1,0 +1,64 @@
+body {
+    background-color: #0c0935;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    
+}
+#backButton{
+    background-color: rgb(240, 22, 22);
+    color:#fff ;
+    padding:9px 14px;
+    border-radius: 4px;
+    Text-Decoration: None;
+    margin-top: 40px;
+
+}
+#backButton {
+    margin-top: 90px; 
+}
+.navbar {
+    margin-bottom: 20px;
+}
+
+.poster img {
+    width: 100%;
+    border-radius: 8px;
+    
+}
+
+.details {
+    padding: 20px;
+}
+
+.details h2 {
+    font-size:32px;
+    margin-bottom: 10px;
+}
+
+.release-date,
+.overview {
+    font-size: 19.2px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.bold{
+    font-weight: bold;
+    font-size: 17px;
+}
+.movie-detail{
+    height: 630px;
+}
+section-two {
+    background-color: #5d2222; 
+}
