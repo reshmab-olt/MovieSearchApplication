@@ -14,7 +14,7 @@
 input {
     width: 500px;
     border-style: none;
-    background-color: #f2f2f2;
+    background-color: transparent;
     border-radius: 10px 0 0 10px;
     padding: 10px;
     margin-right: 0;
@@ -36,39 +36,44 @@ input {
     margin-right: 10px;
 }
 
-a{
+a {
     text-decoration: none;
 }
-h1{
-    color: black;
+
+h1 {
+    color: rgb(255, 255, 255);
     font-weight: 900;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }
+
 .modal-backdrop {
-    background-color: rgba(0,0,0,.0001) !important;
+    background-color: rgba(0, 0, 0, .0001) !important;
 }
 
-.modal{width:102%;}
+.modal {
+    width: 102%;
+}
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: block;
     width: fit-content;
 }
 
-.modal-content{
+.modal-content {
     width: 350px;
     border-radius: 0 !important;
     left: 150px;
 }
 
-.form-check{
+.form-check {
     margin-bottom: 10px;
 }
 
-header{
-    background-color: aqua !important;
+header {
+    background-color: #000000 !important;
     height: 100px;
     box-sizing: border-box;
     width: 100%;
