@@ -1,0 +1,12 @@
+#pageTitle{
+    font-family: 'Tilt Neon', sans-serif;   
+}
+
+a{
+    text-decoration: none;
+    color: rgb(252, 255, 93);
+}
+
+a:hover{
+    text-decoration: none;
+}
