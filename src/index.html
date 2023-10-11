@@ -9,14 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <div class="container">
     <div class=" container-fluid">
 
 
@@ -33,22 +33,36 @@
             <div class="search-box-container">
 
                 <form class="form">
-                    <span class="filter"></span>
-
-                    <div class="filter-options">
-                        <div class="form-check-input">
-
-
-
-                        </div>
-
-
+                    <div class="filter-button-container">
+                        <button type="button" target="#filterOptions" class="modal-toggle">
+                            <i class="fa fa-solid fa-filter" aria-hidden="true"></i>
+                        </button>
                     </div>
 
-                    <input type="text" name="search" id="searchBox">
+                    <div class="modal modal-fade filter-option-modal" id="filterOptions">
+                        <div class="form-check-input">
+
+                            <label for="checkboxOne">check one</label>
+                            <input type="checkbox" id="checkboxOne">
+
+                            <label for="checkboxTwo">check Two</label>
+                            <input type="checkbox" id="checkboxTwo">
+
+                            <label for="checkboxThree">check Three</label>
+                            <input type="checkbox" id="checkboxThree">
+
+                            <label for="checkboxFour">check Four</label>
+                            <input type="checkbox" id="checkboxFour">
+
+                        </div>
+                    </div>
+
+                    <input type="text" name="searchBox" id="searchBox">
+                    <button type="submit" id="searchButton">
+                        <i class="fa fa-search search-icon"></i>
+                    </button>
                 </form>
             </div>
-
 
             <div>
                 <div class="search-results">
@@ -56,7 +70,6 @@
             </div>
         </main>
 
-    </div>
     </div>
 </body>
 
