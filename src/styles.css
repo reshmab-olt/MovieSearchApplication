@@ -1,12 +1,18 @@
 #pageTitle{
     font-family: 'Tilt Neon', sans-serif;   
+    font-weight: 900;
 }
 
 a{
     text-decoration: none;
-    color: rgb(252, 255, 93);
+    color: #fcff5d;
 }
 
 a:hover{
     text-decoration: none;
+    color: hsl(61, 100%, 68%);
+}
+
+.container{
+    background-color: rgb(37, 15, 15);
 }
