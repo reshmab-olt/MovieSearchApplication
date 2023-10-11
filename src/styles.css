@@ -4,7 +4,7 @@
     font-size: 20px;
     border-radius: 0 10px 10px 0;
     border: none;
-    background-color: #8800ff;
+    background-color: #0d0c0e;
     color: #fff;
     cursor: pointer;
     margin-left: 0;
@@ -73,7 +73,7 @@ input[type="checkbox"] {
 }
 
 header {
-    background-color: #000000 !important;
+    background-color: #1c9bc2 !important;
     height: 100px;
     box-sizing: border-box;
     width: 100%;
