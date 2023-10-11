@@ -2,20 +2,26 @@
     padding: 10px 30px;
     background: #ddd;
     font-size: 20px;
-    border-radius: 0 10px 10px 0;
+    position: absolute;
     border: none;
+<<<<<<< HEAD
     background-color: #0d0c0e;
     color: #fff;
+=======
+    background-color:#fff;
+    border-color: #ffffff !important;
+>>>>>>> b8e0c1c78fcb91d10f986d0808e2167e5f84e503
     cursor: pointer;
     margin-left: 0;
     box-sizing: border-box;
+    
 }
 
 input {
-    width: 500px;
+    width: 300px;
     border-style: none;
-    background-color: transparent;
-    border-radius: 10px 0 0 10px;
+    background-color: #fff;
+    
     padding: 10px;
     margin-right: 0;
     font-size: 20px;
@@ -42,7 +48,8 @@ a {
 
 h1 {
     color: rgb(255, 255, 255);
-    font-weight: 900;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a:hover {
@@ -65,7 +72,10 @@ input[type="checkbox"] {
 .modal-content {
     width: 350px;
     border-radius: 0 !important;
-    left: 150px;
+    left: 280px;
+    border: none;
+    background-color: black;
+    color: #00ff62;
 }
 
 .form-check {
@@ -73,8 +83,22 @@ input[type="checkbox"] {
 }
 
 header {
+<<<<<<< HEAD
     background-color: #1c9bc2 !important;
+=======
+    background-color: transparent !important;
+>>>>>>> b8e0c1c78fcb91d10f986d0808e2167e5f84e503
     height: 100px;
     box-sizing: border-box;
     width: 100%;
+    vertical-align: bottom;
+}
+
+body{
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2F825777281665322006%2F&psig=AOvVaw2sREMQYxfeVCVfkmb3KVQI&ust=1697109418963000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCqs7bv7YEDFQAAAAAdAAAAABAI');
+  
+}
+
+.back-drop{
+    background-color: #00000071;
 }
