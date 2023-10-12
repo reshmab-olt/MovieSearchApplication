@@ -17,118 +17,123 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-
 <body>
-    <div class="main container-fluid p-0">
-        <header>
-            <div class="d-flex justify-content-between px-3 pt-3 py-0">
-                <div class="d-flex justify-content-start">
-                    <img src="logo.png" class="rounded-circle" height="70" alt="image">
-                    <a href="#">
-                        <h1 class="ml-1 mt-2">Film Buff</h1>
-                    </a>
-                </div>
-                <div class="filters mt-3 ml-5 pl-4">
-                    <p class="p-2">ADVENTURE</p>
-                    <p class="p-2">ACTION THRILLER</p>
-                    <p class="p-2">FEEL GOOD</p>
-                </div>
-                <div class="search-box-container">
-                    <form class="form">
-                        <!-- <div class="modal" id="filterOptions">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <h5>Genre</h5>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="checkboxOne">
-                                            <label class="form-check-label" for="checkboxOne">Check One</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="checkboxTwo">
-                                            <label class="form-check-label" for="checkboxTwo">Check Two</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="checkboxThree">
-                                            <label class="form-check-label" for="checkboxThree">Check Three</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="checkboxFour">
-                                            <label class="form-check-label" for="checkboxFour">Check Four</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="search-content p-0">
-                            <button type="button" id="filterButton" data-target="#filterOptions" data-toggle="modal">
-                                <i class="fa fa-solid fa-filter" aria-hidden="true"></i>
-                            </button>
-
-                            <input type="text" name="searchBox" id="searchBox" placeholder="Search...">
-                            <button type="submit" id="searchButton">
-                                <i class="fa fa-search search-icon"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </header>
-        <main>
-            
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-  
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="Godzilla20Kong.jpg" alt="Los Angeles" style="width:100%;">
-        </div>
-  
-        <div class="item">
-          <img src="Godzilla20Kong.jpg" alt="Chicago" style="width:100%;">
-        </div>
-      
-        <div class="item">
-          <img src="Godzilla20Kong.jpg" alt="New york" style="width:100%;">
-        </div>
-      </div>
-  
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    <div class="container-fluid">
+        <div class="row py-3 header">
+            <div class="col-md-3">
+                <div class="row">
+            <div class="col-md-3">
+    <img src="logo.png" class="rounded-circle" height="70" alt="image">
+</div>
+<div class="col-md-9 ">
+    <a href="#">
+        <h1 class="m-0 mt-3">Film Buff</h1>
+    </a>
     </div>
-    <div class="bb">
-    <div class="footer pt-2 mt-0">
-        <a href="https://www.instagram.com/film.buff._"> <!-- Add the Instagram profile link here -->
+    </div>
+    </div>
+    <div class="col-md-6 mt-4 pt-2">
+    <div class="row">
+        <div class="col-md-2">
+        <p class="sort">DRAMA</p>
+        </div>
+        <div class="col-md-2">
+        <p class="sort">ROMANCE</p>
+        </div>
+        <div class="col-md-2">
+        <p class="sort">ACTION</p>
+        </div>
+        <div class="col-md-2">
+            <p class="sort" >COMEDY</p>
+            </div>
+            <div class="col-md-2">
+                <p class="sort" >FANTASY</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="sort" >HORROR</p>
+                    </div>
+    </div>
+    </div>
+    <div class="col-md-3 mt-3">
+        
+        <form class="form">
+            <div class="row">
+                <div class="col-md-9 p-0">
+            <input type="text" name="searchBox" id="searchBox" placeholder="Search...">
+        </div>
+        <div class="col-md-3 p-0">
+            <button class="btn " type="submit" id="searchButton">
+                <i class="fa fa-search search-icon"></i>
+            </button>
+        </div>
+            </div>
+        </form>
+        </div>
+        </div>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+         
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="dramaaaaaaaaa.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="dramaa.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="action.jpg" alt="New york" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="comedy.jpg" alt="New york" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="fantasy.jpg" alt="New york" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="horror.jpg" alt="New york" style="width:100%;">
+                </div>
+            </div>
+
+           
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="search-results"></div>
+        <div class="row mt-3">
+            <div class="col-md-4 text-right">
+        <a href="https://www.instagram.com/film.buff._">
             <i class="fa fa-instagram"></i>
         </a>
-        <a href="#"> <!-- Add the Facebook page link here -->
+        </div>
+        <div class="col-md-4 text-center">
+        <a href="#">
             <i class="fa fa-facebook"></i>
         </a>
-        <a href="#"> <!-- Add the Twitter profile link here -->
+    </div>
+    <div class="col-md-4 text-left">
+        <a href="#">
             <i class="fa fa-twitter"></i>
         </a>
     </div>
-<p class="ml-5 mb-0">Follow us on Instagram Facebook Twitter</p>
-</div>
-        </main>
-   
-    <footer>
-       
-</footer>
-</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+        <p>Find us on Instagram | Facebook | Twitter</p>
+    </div>
+        </div>
 </body>
 </html>
