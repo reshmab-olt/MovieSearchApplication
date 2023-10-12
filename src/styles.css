@@ -1,5 +1,4 @@
 #searchButton {
-    padding: 10px 30px;
     background: #ddd;
     font-size: 20px;
     border-radius: 0 10px 10px 0;
@@ -8,19 +7,20 @@
     color: #fff;
     cursor: pointer;
     margin-left: 0;
-    box-sizing: border-box;
+    
+    /* box-sizing: border-box; */
 }
 
 input {
-    width: 400px;
+   
     font-size: 18px;
     border-style: none;
     background-color: rgb(252, 243, 243);
+    
     border-radius: 10px 0 0 10px;
-    padding: 10px;
-    margin-right: 0;
-    font-size: 20px;
-    box-sizing: border-box;
+     padding: 8px;
+    margin-right: 0; 
+  
 }
 
 .search-content {
@@ -42,7 +42,7 @@ a {
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: 900;
 }
 
@@ -75,19 +75,22 @@ input[type="checkbox"] {
 
 header {
     background-color: #2b2626de !important;
-    height: 100px;
+    /* Remove height: 100%; */
     box-sizing: border-box;
     width: 100%;
 }
-body {
-    margin: 0; 
-    padding: 0; 
-    /* background-image: url('https://chipsimages.fra1.digitaloceanspaces.com/wp-content/uploads/2015/04/07124407/Fotolia_72711898_XS.jpg'); */
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
+
+main {
+    height: 580px;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('https://chipsimages.fra1.digitaloceanspaces.com/wp-content/uploads/2015/04/07124407/Fotolia_72711898_XS.jpg');
+    background-repeat: no-repeat; */
+    background-size: 100% 100%;
     background-position: center;
     background-attachment: fixed;
-  }
+}
+
   #filterButton {
     font-size: 30px;
     border: none;
@@ -96,5 +99,40 @@ body {
     color: #fff; 
 }
 
-  
-  
+  .footer{
+    text-align: center;
+    margin-top: 10px;
+  }
+  /* i{
+    margin-left: 50px;
+  } */
+
+  /* .filters {
+   
+    display: flex;
+    justify-content: space-between;
+} */
+
+.filters p {
+    margin-right: 15px;
+    font-weight: 700;
+    color: rgb(236, 214, 14);;
+    font-size: larger;
+}
+
+.bb p{
+    text-align: center;
+    font-size: smaller;
+    color: grey;
+}
+
+.sort{
+   
+    font-weight: 700;
+    color: rgb(236, 214, 14);;
+    font-size: larger;
+}
+.header{
+    background-color: rgb(22, 20, 20);
+    
+}
