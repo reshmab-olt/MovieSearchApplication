@@ -136,3 +136,15 @@ main {
     background-color: rgb(22, 20, 20);
     
 }
+.movie-container{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.search-results{
+    text-align: center;
+   /* margin-right: 50px;
+   margin-left: 50px; */
+   /* padding-right: 20px;
+   padding-left: 20px; */
+}

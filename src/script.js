@@ -45,15 +45,16 @@ function displayResults(data) {
             const imageSource = posterPath ? `${imageBaseUrl}w200${posterPath}` : 'placeholder-image-url.jpg';
             const movieContainer = $('<div>').addClass('movie-container');
             const title = movie.title;
-            const titleElement = $('<p>').text(title);
-
+            
+            
             if (posterPath) {
                 const imageElement = $('<img>').attr('src', imageSource);
+                const titleElement = $('<p>').text(title);
                 movieContainer.append(imageElement);
+                movieContainer.append(titleElement);
             }
-            movieContainer.append(titleElement);
 
             movieResultsContainer.append(movieContainer);
         });
     }
-}
+} 
