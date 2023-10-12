@@ -47,13 +47,6 @@ function displayResults(data) {
             const imageSource = posterPath ? `${imageBaseUrl}w154${posterPath}` : 'placeholder-image-url.jpg';
             const movieContainer = $('<div>').addClass('movie-container');
             const title = movie.title;
-<<<<<<< Updated upstream
-            
-            
-=======
-
-
->>>>>>> Stashed changes
             if (posterPath) {
                 const imageElement = $('<img>').attr('src', imageSource);
                 const titleElement = $('<p>').text(title);
@@ -64,12 +57,10 @@ function displayResults(data) {
             movieResultsContainer.append(movieContainer);
         });
     }
-<<<<<<< Updated upstream
-} 
-=======
+
 }
 
-
+//Sort
 $('.sort').on('click', function () {
 
     genreUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}`
@@ -78,4 +69,3 @@ $('.sort').on('click', function () {
 
 
 });
->>>>>>> Stashed changes

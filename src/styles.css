@@ -94,7 +94,6 @@ main {
     display: inline-block;
     margin-top: 20px;
     margin-right: 20px;
-    height:350px; 
 }
 
 .search-results {
@@ -108,12 +107,11 @@ main {
     font-size: 15px;
     font-weight: 900;
     margin-top: 5px;
-    width: 200px;
     overflow-wrap: break-word;  
     word-wrap: break-word; 
     word-break: break-word;
-    
 }
+
 .modal-backdrop {
     background-color: rgba(0, 0, 0, .0001) !important;
 }
