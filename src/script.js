@@ -1,3 +1,4 @@
+
 const apiKey = 'b31738b39a9616ae7b1e0f4528fb1985';
 
 function fetchData(urlFinal) {
@@ -57,15 +58,11 @@ function displayResults(data) {
             movieResultsContainer.append(movieContainer);
         });
     }
-
 }
 
-//Sort
+// Sort function
 $('.sort').on('click', function () {
-
-    genreUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}`
-
-
-
-
+    const genre = $(this).attr('value');
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genre}`;
+    fetchData(url);
 });
