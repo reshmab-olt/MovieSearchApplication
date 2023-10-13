@@ -98,6 +98,7 @@ main {
     display: inline-block;
     margin-top: 20px;
     margin-right: 20px;
+   
 }
 
 .search-results {
@@ -105,6 +106,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #f0dfdf;
 }
 
 .movie-container p {
@@ -115,6 +117,11 @@ main {
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
+}
+
+.footer-content{
+    color: rgb(138, 131, 131);
+    font-size: smaller;
 }
 
 .modal-backdrop {
