@@ -39,3 +39,27 @@ body {
     font-weight: bold;
     font-size: 25px;
 }
+#backdrop {
+    float: left;
+    max-width: 360px; 
+    border-radius: 8px;
+}
+.col-md-8 {
+    padding-left: 30px;
+}
+.movie-detail {
+    background-color: #232323; 
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.header {
+    background-color: rgb(107, 19, 19);
+}
+#sidedrop {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+}
