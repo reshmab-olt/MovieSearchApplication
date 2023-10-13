@@ -16,7 +16,6 @@ function fetchData(urlFinal) {
     });
 }
 
-
 function getSearchQuery(apiKey) {
     const query = $('#searchBox').val();
 
@@ -29,14 +28,10 @@ $("#searchButton").click(function (e) {
     getSearchQuery(apiKey);
 });
 
-
 function filterResultsByTitle(results) {
     const query = $('#searchBox').val().toLowerCase();
     return results.filter(movie => movie.title.toLowerCase().includes(query));
 }
-
-
-
 
 function displayResults(data) {
     const movieResultsContainer = $('.search-results');
@@ -110,7 +105,7 @@ $('.filter-options').on('click', function () {
     moreFilters.style.display = 'none';
 });
 
-$('#myCarousel').on('click'),function(){
-    const moreFilters = document.querySelector('.more-filters'); 
+$('#myCarousel').on('click', function () {
+    const moreFilters = document.querySelector('.more-filters');
     moreFilters.style.display = 'none';
-}
+});
