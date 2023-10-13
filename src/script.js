@@ -8,13 +8,10 @@ function fetchData(urlFinal) {
         type: 'GET',
         dataType: 'json',
         success(data) {
-            if (genreClicked) {
-                displayResults(data.results)
 
-                genreClicked = false
-            }
-            const filteredTitleResult = filterResultsByTitle(data.results);
-            displayResults(filteredTitleResult)
+
+            pagination(data);
+
         }
     });
 }
@@ -75,6 +72,28 @@ $('.sort').on('click', function () {
     fetchData(url);
 });
 
+function pagination(data) {
+
+    const slicedResult = data.results.slice(0, 5);
+    if (genreClicked) {
+        displayResults(slicedResult)
+
+        genreClicked = false
+    }
+    const filteredTitleResult = filterResultsByTitle(slicedResult);
+    displayResults(filteredTitleResult)
+    const movieResultsContainer = $('.search-results')
+    totalPages = data.results.length / 10;
+
+    const pageNumberDiv = $('<div>').addClass('page-number-div').css('display', 'inline');
+    for (let i = 1; i <= totalPages; i++) {
+        const pageSelect = $('<button>').addClass('pageButtons btn btn-secondary px-2 py-1').attr('value', i).html(i);
+
+        pageNumberDiv.append(pageSelect)
+    }
+    $(document.body).append(pageNumberDiv)
+}
+
 const moreElement = document.querySelector('#more'); 
 moreElement.addEventListener('click', function() {
     const moreFilters = document.querySelector('.more-filters'); 
@@ -91,3 +110,7 @@ $('.filter-options').on('click', function () {
     moreFilters.style.display = 'none';
 });
 
+$('#myCarousel').on('click'),function(){
+    const moreFilters = document.querySelector('.more-filters'); 
+    moreFilters.style.display = 'none';
+}

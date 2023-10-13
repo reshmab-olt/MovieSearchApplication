@@ -177,12 +177,12 @@ a:hover {
 
 .more-filters {
     display: none;
-    width: 300px;
+    width: 200px;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     z-index: 1000;
-    right: 80px;
-    border-radius: 5px;
+    right: 5px;
+    border-radius: 2px;
 }
 
 .more-filters p {
@@ -191,7 +191,10 @@ a:hover {
     font-size: larger;
     font-weight: 700;
     padding-left: 10px;
+}
 
+.pageButtons {
+    height: max-content;
 }
 
 @media (max-width :1210px) {
