@@ -1,5 +1,6 @@
-
 const apiKey = 'b31738b39a9616ae7b1e0f4528fb1985';
+let genreClicked = false
+let genreName = 0;
 
 function fetchData(urlFinal) {
     $.ajax({
@@ -7,33 +8,38 @@ function fetchData(urlFinal) {
         type: 'GET',
         dataType: 'json',
         success(data) {
-            const filteredResults = filterResultsByTitle(data.results);
-            displayResults(filteredResults); // Display the filtered results
+            if (genreClicked) {
+                displayResults(data.results)
+
+                genreClicked = false
+            }
+            const filteredTitleResult = filterResultsByTitle(data.results);
+            displayResults(filteredTitleResult)
         }
     });
 }
 
+
 function getSearchQuery(apiKey) {
     const query = $('#searchBox').val();
-    const language = selectedLanguage(); // Get the selected language
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}&language=${language}`;
+
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}`;
     fetchData(url);
 }
 
 $("#searchButton").click(function (e) {
-
     e.preventDefault();
     getSearchQuery(apiKey);
 });
 
-function selectedLanguage() {
-    return $('input[name="language"]:checked').val();
-}
 
 function filterResultsByTitle(results) {
     const query = $('#searchBox').val().toLowerCase();
     return results.filter(movie => movie.title.toLowerCase().includes(query));
 }
+
+
+
 
 function displayResults(data) {
     const movieResultsContainer = $('.search-results');
@@ -62,7 +68,9 @@ function displayResults(data) {
 
 // Sort function
 $('.sort').on('click', function () {
-    const genre = $(this).attr('value');
+    genreClicked = true
+    genre = $(this).attr('value');
+    console.log(genre)
     const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genre}`;
     fetchData(url);
 });
