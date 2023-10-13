@@ -74,3 +74,20 @@ $('.sort').on('click', function () {
     const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genre}`;
     fetchData(url);
 });
+
+const moreElement = document.querySelector('#more'); 
+moreElement.addEventListener('click', function() {
+    const moreFilters = document.querySelector('.more-filters'); 
+    moreFilters.style.display = 'block';
+});
+
+$('.filter-options').on('click', function () {
+    genreClicked = true
+    genre = $(this).attr('value');
+    console.log(genre)
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genre}`;
+    fetchData(url);
+    const moreFilters = document.querySelector('.more-filters'); 
+    moreFilters.style.display = 'none';
+});
+
