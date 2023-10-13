@@ -1,3 +1,6 @@
+
+const apiKey = 'b31738b39a9616ae7b1e0f4528fb1985';
+
 function fetchData(urlFinal) {
     $.ajax({
         url: urlFinal,
@@ -10,8 +13,7 @@ function fetchData(urlFinal) {
     });
 }
 
-function getSearchQuery() {
-    const apiKey = 'b31738b39a9616ae7b1e0f4528fb1985';
+function getSearchQuery(apiKey) {
     const query = $('#searchBox').val();
     const language = selectedLanguage(); // Get the selected language
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}&language=${language}`;
@@ -19,8 +21,9 @@ function getSearchQuery() {
 }
 
 $("#searchButton").click(function (e) {
+
     e.preventDefault();
-    getSearchQuery();
+    getSearchQuery(apiKey);
 });
 
 function selectedLanguage() {
@@ -42,18 +45,24 @@ function displayResults(data) {
         data.forEach(movie => {
             const imageBaseUrl = 'http://image.tmdb.org/t/p/';
             const posterPath = movie.poster_path;
-            const imageSource = posterPath ? `${imageBaseUrl}w200${posterPath}` : 'placeholder-image-url.jpg';
+            const imageSource = posterPath ? `${imageBaseUrl}w154${posterPath}` : 'placeholder-image-url.jpg';
             const movieContainer = $('<div>').addClass('movie-container');
             const title = movie.title;
-            const titleElement = $('<p>').text(title);
-
             if (posterPath) {
                 const imageElement = $('<img>').attr('src', imageSource);
+                const titleElement = $('<p>').text(title);
                 movieContainer.append(imageElement);
+                movieContainer.append(titleElement);
             }
-            movieContainer.append(titleElement);
 
             movieResultsContainer.append(movieContainer);
         });
     }
 }
+
+// Sort function
+$('.sort').on('click', function () {
+    const genre = $(this).attr('value');
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genre}`;
+    fetchData(url);
+});

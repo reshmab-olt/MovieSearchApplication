@@ -1,40 +1,11 @@
-#searchButton {
-    background: #ddd;
-    font-size: 20px;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    background-color: #0d0c0e;
-    color: #fff;
-    cursor: pointer;
-    margin-left: 0;
-    
-    /* box-sizing: border-box; */
-}
 
 input {
-   
     font-size: 18px;
     border-style: none;
     background-color: rgb(252, 243, 243);
-    
     border-radius: 10px 0 0 10px;
-     padding: 8px;
-    margin-right: 0; 
-  
-}
-
-.search-content {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-}
-
-#filterButton {
-    font-size: 30px;
-    border: none;
-    background-color: transparent;
-    margin-right: 10px;
+    padding: 8px;
+    margin-right: 0;
 }
 
 a {
@@ -46,8 +17,100 @@ h1 {
     font-weight: 900;
 }
 
-a:hover {
-    text-decoration: none;
+input[type="checkbox"] {
+    display: block;
+    width: fit-content;
+}
+
+header {
+    background-color: #2b2626de !important;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+main {
+    height: 580px;
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#filterButton {
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+#filterButton {
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+    color: #fff;
+}
+
+#searchButton {
+    background: #ddd;
+    font-size: 20px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: #0d0c0e;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.filters p {
+    margin-right: 15px;
+    font-weight: 700;
+    color: rgb(236, 214, 14);
+    ;
+    font-size: larger;
+}
+
+.sort {
+    font-weight: 700;
+    color: rgb(236, 214, 14);
+    font-size: larger;
+}
+
+.header {
+    background-color: rgb(22, 20, 20);
+}
+
+.movie-container {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.search-results {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-container p {
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 5px;
+    width:200px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
 }
 
 .modal-backdrop {
@@ -58,81 +121,20 @@ a:hover {
     width: 102%;
 }
 
-input[type="checkbox"] {
-    display: block;
-    width: fit-content;
-}
-
 .modal-content {
     width: 350px;
     border-radius: 0 !important;
     left: 150px;
 }
 
-.form-check {
-    margin-bottom: 10px;
-}
-
-header {
-    background-color: #2b2626de !important;
-    /* Remove height: 100%; */
-    box-sizing: border-box;
-    width: 100%;
-}
-
-main {
-    height: 580px;
-    margin: 0;
-    padding: 0;
-    /* background-image: url('https://chipsimages.fra1.digitaloceanspaces.com/wp-content/uploads/2015/04/07124407/Fotolia_72711898_XS.jpg');
-    background-repeat: no-repeat; */
-    background-size: 100% 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-  #filterButton {
-    font-size: 30px;
-    border: none;
-    background-color: transparent;
-    margin-right: 10px;
-    color: #fff; 
-}
-
-  .footer{
-    text-align: center;
-    margin-top: 10px;
-  }
-  /* i{
-    margin-left: 50px;
-  } */
-
-  /* .filters {
-   
+.search-content {
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
-} */
-
-.filters p {
-    margin-right: 15px;
-    font-weight: 700;
-    color: rgb(236, 214, 14);;
-    font-size: larger;
+    flex-wrap: wrap;
+    justify-content: end;
 }
 
-.bb p{
-    text-align: center;
-    font-size: smaller;
-    color: grey;
+a:hover {
+    text-decoration: none;
 }
 
-.sort{
-   
-    font-weight: 700;
-    color: rgb(236, 214, 14);;
-    font-size: larger;
-}
-.header{
-    background-color: rgb(22, 20, 20);
-    
-}
