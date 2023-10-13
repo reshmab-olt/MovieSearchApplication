@@ -5,45 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Details</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="detail.css">
 </head>
 
 <body>
-    <header class="bg-dark text-white text-center py-4">
-        <h1 class="mb-0">Movie Search Details</h1>
+    <header class="bg-dark text-white text-center ">
+        <div class="row py-3 header">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="logo.png" class="rounded-circle" height="70" alt="image">
+                    </div>
+                    <div class="col-md-9 ">
+                        <a href="index.html">
+                            <h1 class="m-0 mt-3">Film Buff</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
     </header>
 
     <main class="container my-5">
         <section class="movie-detail mb-5">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img src="https://www.metacritic.com/a/img/catalog/provider/2/2/2-f772997cf6a676f7d2f57b633001bb52.jpg"
-                        alt="Movie Poster" class="img-fluid rounded">
+                    <img id="backdrop" alt="Backdrop Image" class="img-fluid rounded">
                 </div>
                 <div class="col-md-8">
-                    <h2 class="mb-3" id="original_title">Movie Title:</h2>
-                    <h4 class="mb-3" id="title">Title:</h4>
+                    <h2 class="mb-3"><span id="titleValue"></span></h2>
+                    <h5 class="mb-3"><span id="originalTitleValue"></span></h5>
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <p id="adult"><span class="bold">Adult:</span> ## </p>
-                            <p id="release_date"><span class="bold">Release Date:</span> ## </p>
-                            <p id="genres"><span class="bold">Genres:</span> ## </p>
-                            <p id="runtime"><span class="bold">Runtime:</span> ##</p>
+                            <p class="mb-2"><span class="bold">Adult:</span> <span id="adultValue"></span></p>
+                            <p class="mb-2"><span class="bold">Genres:</span> <span id="genreValue"></span></p>
+                           
+                           
+                            <p class="mb-2"><span class="bold">Total Vote:</span> <span id="totalVoting"></span></p>
+                            <p class="mb-2"><span class="bold">Language:</span> <span id="originalLanguageValue"></span></p>
                         </div>
                         <div class="col-md-6">
-                            <p id="original_language"><span class="bold">Language:</span> ##</p>
-                            <p><span class="bold">Spoken Language:</span> ##</p>
-                            <p><span class="bold">Box Office:</span> ##</p>
-                            <p><span class="bold">Production Company:</span> ##</p>
+                            <p class="mb-2"><span class="bold">Popularity:</span> <span id="popularity"></span></p>
+                            <p class="mb-2"><span class="bold">Release Date:</span> <span id="releaseDateValue"></span></p>
+                            <p class="mb-2"><span class="bold">Average Voting:</span> <span id="averageVoting"></span></p>
+                            <p class="mb-2"><span class="bold">ID:</span> <span id="idValue"></span></p>
                         </div>
                     </div>
-                    <p class="overview"><span class="bold">Overview:</span> Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    
                     <a class="btn btn-danger" href="index.html">Back to Search</a>
                 </div>
             </div>
@@ -51,19 +61,21 @@
 
         <section class="text-white p-4 bg-dark mb-5 rounded">
             <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <h3 class="summary-heading mb-4"><span class="heading-bold"><u>Other Details</u></span></h3>
-                    <p id="overview"><span class="bold">Overview:</span> $100,000,000</p>
-                    <p id="tagline"><span class="bold">Tagline:</span> Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <p id="status"><span class="bold">Status:</span> ##</p>
-                    <p id="production_countries"><span class="bold">Production Country:</span> ##</p>
+                <div class="col-md-6">
+                    <p class="mb-2"><span class="bold">Overview:</span> <span id="overviewValue"></span></p>
+                    
+                </div>
+                <div class="col-md-6 text-center">
+                    <img id="sidedrop" alt="Backdrop Image" class="img-fluid rounded">
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="detail.js"></script>
 </body>
 
 </html>
