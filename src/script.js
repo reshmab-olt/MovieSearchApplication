@@ -61,8 +61,27 @@ function displayResults(data) {
             movieResultsContainer.append(movieContainer);
         });
     }
-}
-
+    
+        data.forEach(movie => {
+            const imageBaseUrl = 'http://image.tmdb.org/t/p/';
+            const posterPath = movie.poster_path;
+            const imageSource = posterPath ? `${imageBaseUrl}w154${posterPath}` : 'placeholder-image-url.jpg';
+            const movieContainer = $('<div>').addClass('movie-container');
+            const title = movie.title;
+    
+            if (posterPath) {
+                const imageElement = $('<img>').attr('src', imageSource);
+                const titleElement = $('<p>').text(title);
+    
+                const detailLink = $('<a>').attr('href', `detail.html?title=${title}`).append(imageElement, titleElement);
+    
+                movieContainer.append(detailLink);
+            }
+    
+            movieResultsContainer.append(movieContainer);
+        });
+    }
+    
 // Sort function
 $('.sort').on('click', function () {
     genreClicked = true
