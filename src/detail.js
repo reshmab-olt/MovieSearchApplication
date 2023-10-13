@@ -1,4 +1,3 @@
-$(document).ready(function() {
     const queryParams = new URLSearchParams(window.location.search);
     const title = queryParams.get('title');
     const apiKey = 'b31738b39a9616ae7b1e0f4528fb1985';
@@ -59,4 +58,3 @@ $(document).ready(function() {
             console.error('Error fetching movie details:', error);
         }
     });
-});
