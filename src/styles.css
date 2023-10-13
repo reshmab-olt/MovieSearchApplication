@@ -1,5 +1,6 @@
 
 input {
+    width: 200px;
     font-size: 18px;
     border-style: none;
     background-color: rgb(252, 243, 243);
@@ -15,6 +16,7 @@ a {
 h1 {
     color: white;
     font-weight: 900;
+    
 }
 
 input[type="checkbox"] {
@@ -74,17 +76,18 @@ main {
 
 .filters p {
     margin-right: 15px;
-    font-weight: 700;
+    font-weight: 900;
     color: rgb(236, 214, 14);
-    ;
-    font-size: larger;
+    
+    font-size: 15px;
 }
 
-.sort {
+/* .sort {
+    margin-right: 1;
     font-weight: 700;
     color: rgb(236, 214, 14);
-    font-size: larger;
-}
+    font-size: 15px;
+} */
 
 .header {
     background-color: rgb(22, 20, 20);
@@ -138,3 +141,75 @@ a:hover {
     text-decoration: none;
 }
 
+.logo{
+    display: flex;
+}
+.filters{
+    display: flex;
+    
+}
+.logo-filters{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.serach{
+    display: flex;
+    justify-content: center;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+#searchBox{
+    width: 350px;
+}
+
+@media (max-width :1210px) {
+  
+    .logo-filters{
+        display: block;
+        
+    }
+    .logo{
+        justify-content: center;
+    }
+    .filters{
+        justify-content: center;
+    }
+}
+
+@media (max-width :550px) {
+  
+    .filters p {
+        font-size: 12px;
+        margin-right: 10px;
+    }  
+    .search{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    input {
+        width: 400px;
+        font-size: 5px;
+        border-style: none;
+        border-radius: 10px 0 0 10px;
+        padding: 0;
+    }   
+}
+
+@media (max-width :450px) {
+  
+    .filters p {
+        font-size: 10px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width :350px) {
+  
+    .filters p {
+        font-size: 8px;
+        margin-right: 5px;
+    }
+}
