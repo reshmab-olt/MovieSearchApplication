@@ -1,5 +1,5 @@
-
 input {
+    width: 200px;
     font-size: 18px;
     border-style: none;
     background-color: rgb(252, 243, 243);
@@ -15,6 +15,10 @@ a {
 h1 {
     color: white;
     font-weight: 900;
+}
+
+hr {
+    margin: 0;
 }
 
 input[type="checkbox"] {
@@ -63,6 +67,12 @@ main {
     margin-left: 0;
 }
 
+#searchBox {
+    width: 300px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .form-check {
     margin-bottom: 10px;
 }
@@ -74,16 +84,10 @@ main {
 
 .filters p {
     margin-right: 15px;
-    font-weight: 700;
-    color: rgb(236, 214, 14);
-    ;
-    font-size: larger;
-}
+    font-weight: 900;
+    color: rgb(250, 225, 4);
 
-.sort {
-    font-weight: 700;
-    color: rgb(236, 214, 14);
-    font-size: larger;
+    font-size: 15px;
 }
 
 .header {
@@ -107,9 +111,9 @@ main {
     font-size: 15px;
     font-weight: 900;
     margin-top: 5px;
-    width:200px;
-    overflow-wrap: break-word;  
-    word-wrap: break-word; 
+    width: 200px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     word-break: break-word;
 }
 
@@ -137,4 +141,102 @@ main {
 a:hover {
     text-decoration: none;
 }
+
+.logo {
+    display: flex;
+}
+
+.filters {
+    display: flex;
+}
+
+.logo-filters {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 43, 40);
+    padding-bottom: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.filters p:hover {
+    color: rgb(241, 186, 4);
+}
+
+.application {
+    margin: 0 7px;
+}
+
+.more-filters {
+    display: none;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 1000;
+    right: 5px;
+    border-radius: 2px;
+}
+
+.more-filters p {
+    padding: 5px;
+    margin-bottom: 0;
+    font-size: larger;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.pageButtons {
+    height: max-content;
+}
+
+@media (max-width :1210px) {
+    .logo-filters {
+        display: block;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .filters {
+        justify-content: center;
+    }
+}
+
+@media (max-width :550px) {
+    .filters p {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    input {
+        font-size: 15px;
+        border-style: none;
+        border-radius: 10px 0 0 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width :450px) {
+    .filters p {
+        font-size: 10px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width :350px) {
+    .filters p {
+        font-size: 8px;
+        margin-right: 5px;
+    }
+}
+
+
 
