@@ -67,10 +67,14 @@ main {
     margin-left: 0;
 }
 
-#searchBox {
+#searchInput {
     width: 300px;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+#HR{
+    margin:20px 50px;
 }
 
 .form-check {
@@ -86,7 +90,7 @@ main {
     margin-right: 15px;
     font-weight: 900;
     color: rgb(250, 225, 4);
-
+    cursor: pointer;
     font-size: 15px;
 }
 
@@ -98,7 +102,7 @@ main {
     display: inline-block;
     margin-top: 20px;
     margin-right: 20px;
-   
+
 }
 
 .search-results {
@@ -119,7 +123,7 @@ main {
     word-break: break-word;
 }
 
-.footer-content{
+.footer-content {
     color: rgb(138, 131, 131);
     font-size: smaller;
 }
@@ -164,7 +168,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-.search {
+.search-box {
     display: flex;
     justify-content: center;
 }
@@ -204,13 +208,59 @@ a:hover {
     height: max-content;
 }
 
+.search-filters {
+    display: flex;
+}
+
+.powerful-sort-content{
+    text-align: center;
+}
+
+.movie-details-content{
+    text-align: center;
+}
+
+.search-content{
+    text-align: center;
+}
+
+.application-descriptions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-application{
+    background-color: #eee4e4;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: large;
+}
+
+.about-application p{
+    text-align: center;
+}
+
 @media (max-width :1210px) {
     .logo-filters {
         display: block;
     }
+
+    .search-filters {
+        display: flex;
+        justify-content: center;
+    }
+
     .logo {
         justify-content: center;
     }
+
+}
+
+@media (max-width :850px) {
+    .search-filters {
+        display: block;
+
+    }
+
     .filters {
         justify-content: center;
     }
@@ -229,6 +279,29 @@ a:hover {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .search-filters {
+        display: block;
+    }
+
+    .filters {
+        justify-content: center;
+    }
+
+    .more-filters p {
+        font-size: smaller;
+       
+        padding: 2px;
+    }
+    .more-filters{
+        height: 240px;
+        padding-left: 5px;
+    }
+
+    .application-descriptions{
+        display: block;
+        
+    }
 }
 
 @media (max-width :450px) {
@@ -238,12 +311,19 @@ a:hover {
     }
 }
 
-@media (max-width :350px) {
+@media (max-width :370px) {
     .filters p {
         font-size: 8px;
         margin-right: 5px;
     }
+    .more-filters p {
+        font-size: x-small;
+        padding: 0;
+    }
+    .more-filters{
+        height: 170px;
+        padding-left: 5px;
+        width: 150px;
+    }
 }
-
-
 

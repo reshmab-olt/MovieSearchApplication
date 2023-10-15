@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Josefin+Sans&family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -25,22 +28,24 @@
                 <h1 class="m-0 mt-3 ml-2">Film Buff</h1>
             </a>
         </div>
-        <div class="filters mt-5 mx-5">
-            <p class="sort" value="18">DRAMA</p>
-            <p class="sort" value="10749">ROMANCE</p>
-            <p class="sort" value="28">ACTION</p>
-            <p class="sort" value="35">COMEDY</p>
-          
-            <p class="sort" value="27">HORROR</p>
-            <p id="more" class="mr-0">MORE</p>
-        </div>
-        <form class="form">
-            <div class="search mt-4 mx-2">
-                <input type="text" name="searchBox" id="searchBox" placeholder="Search...">
-                <button class="btn " type="submit" id="searchButton">
-                    <i class="fa fa-search search-icon"></i>
-                </button>
+        <div class="search-filters">
+            <div class="filters mt-5 mx-5">
+                <p class="sort" value="18">DRAMA</p>
+                <p class="sort" value="10749">ROMANCE</p>
+                <p class="sort" value="28">ACTION</p>
+                <p class="sort" value="35">COMEDY</p>
+                <p class="sort" value="27">HORROR</p>
+                <p id="more" class="mr-0">MORE</p>
             </div>
+            <form class="form">
+                <div class="search-box mt-4 mx-2">
+                    <input type="text" name="searchBox" id="searchInput" placeholder="Search...">
+                    <button class="btn " type="submit" id="searchButton">
+                        <i class="fa fa-search search-icon"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="more-filters ">
         <p class="filter-options" value="12">Adventure</p>
@@ -67,11 +72,11 @@
     </div>
     <div class="search-results">
     </div>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="item active">
@@ -90,17 +95,53 @@
                 <img src="horror.jpg" alt="New york" style="width:100%;">
             </div>
         </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <a class="left carousel-control" href="carousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#carousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div class="about-application p-4">
+        <h3 class="text-center">Discover Your next cinematic adventure with our movie search application!</h3>
+        <p>Are you in the mood for thrilling action, heartwarming romance, mindobending sci-fi, or perhaps a good
+            old-fasioned comedy? Look no futher ! Our movie search application is your ultimate movie compainion,
+            designed to help you find the perfect film for every mood and occasion.Movie Buff is not just a movie search
+            application; it's a complete movie lover's ecosystem. Whether you're a fan of action, romance, sci-fi, or
+            indie films, Movie Buff empowers you to explore the world of cinema like never before. Discover, share, and
+            experience the magic of movies with Movie Buff today. Your next movie adventure is just a search away!
+        </p>
+        <hr id="HR">
+        <div class="application-descriptions pb-5">
+            <div class="powerful-sort mr-4">
+                <h4 id="powerfulSortHeading" class="text-center"><strong>Powerful Sort</strong></h4>
+                <div class="powerful-sort-content">
+                    <p>Sort your search results by factors like popularity, release date, or user ratings, helping you
+                        find the perfect movie that suits your current mood and preferences</p>
+                </div>
+            </div>
+            <div class="movie-details mr-3">
+                <h4 id="movieDetailsHeading" class="text-center"><strong>Movie Details</strong></h4>
+                <div class="movie-details-content">
+
+                    <p>Unlock the Magic of Cinema with a Single Click! Discover Movie Details Instantly. Say goodbye to
+                        the hassle of searching for movie information. Just click on the title, and embark on a
+                        cinematic journey.The power of knowledge is just a click away!"</p>
+                </div>
+            </div>
+            <div class="Search">
+                <h4 id="searchheading" class="text-center"><strong>Search</strong></h4>
+                <div class="search-content p-0">
+                    <p>Just put the movie name and click the search button, and that's how ypu can find the movie with
+                        our application.You can find the movies similar as your movie name also.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer mt-0">
-        <!-- <img src="footer.png" alt="image" width="1300px" height="500px"> -->
+        <img src="index-background (2).png" alt="image" width="1470px" height="500px">
     </div>
     <div class="social-media mt-3">
         <a href="https://www.instagram.com/film.buff._">

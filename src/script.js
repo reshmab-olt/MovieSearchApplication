@@ -124,7 +124,8 @@ $('.filter-options').on('click', function () {
     moreFilters.style.display = 'none';
 });
 
-$('#myCarousel').on('click', function () {
+$('#carousel').on('click', function () {
     const moreFilters = document.querySelector('.more-filters');
     moreFilters.style.display = 'none';
 });
+
