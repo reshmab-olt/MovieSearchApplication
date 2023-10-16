@@ -124,11 +124,11 @@ h5 {
     #description {
         padding-left: 170px;
     }
-   
+
     .logo-image {
         width: 100px;
         height: 100px;
-    }   
+    }
 
 }
 
@@ -147,7 +147,7 @@ h5 {
         width: 90px;
         height: 90px;
     }
-   
+
 }
 
 @media screen and (max-width: 600px) {
@@ -254,7 +254,7 @@ h5 {
         font-size: small;
     }
 
-    .logo-image{
+    .logo-image {
         width: 60px;
         height: 60px;
     }
