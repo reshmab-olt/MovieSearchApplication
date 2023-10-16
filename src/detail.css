@@ -2,6 +2,24 @@ span#titleValue {
     margin-left: 8px;
 }
 
+#backdrop {
+    float: left;
+    max-width: 360px;
+    border-radius: 8px;
+}
+
+#sidedrop {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+#description {
+    padding-left: 160px;
+}
+
 .main-container {
     background-color: #000;
     color: #fff;
@@ -62,6 +80,7 @@ h5 {
     font-size: 25px;
 }
 
+<<<<<<< HEAD
 #overviewStatus {
     margin-right: -5px;
     margin-left: -5px;
@@ -71,6 +90,8 @@ h5 {
     padding-left: 160px;
 }
 
+=======
+>>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
 .movie-detail {
     background-color: #232323;
     padding: 30px;
@@ -81,36 +102,27 @@ h5 {
     background-color: rgb(66, 35, 51);
 }
 
-#backdrop {
-    float: left;
-    max-width: 360px;
-    border-radius: 8px;
-}
-
-#sidedrop {
-    max-width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-}
-
 @media screen and (max-width: 915px) {
 
     #titleName {
         font-size: 30px;
     }
-    #titleValue{
+
+    #titleValue {
         font-size: 23px;
     }
 }
 
+<<<<<<< HEAD
      @media screen and (max-width: 822px) {
 
     #logoCircle{
         width: 100px;
         height: 100px;
     }
+=======
+@media screen and (max-width: 822px) {
+>>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
 
     #titleName {
         padding-left: 70px;
@@ -124,15 +136,23 @@ h5 {
     #description {
         padding-left: 170px;
     }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 766px) {
 
+<<<<<<< HEAD
     #logoCircle{
         width: 90px;
         height: 90px;
     }
 
+=======
+>>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
     #titleName {
         padding-left: 70px;
         font-size: 23px;
@@ -141,19 +161,29 @@ h5 {
     #description {
         padding-left: 0px;
     }
-    
-}@media screen and (max-width: 600px) {
+
+    .rounded-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
 
     img {
         width: 500px;
         margin-left: 30px;
     }
 
+<<<<<<< HEAD
     #logoCircle {
         width: 100px;
         height: 100px;
     }
 
+=======
+>>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
     #titleName {
         padding-left: 30px;
         font-size: 30px;
@@ -168,6 +198,11 @@ h5 {
     #sidedrop {
         margin-left: 0;
     }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -176,12 +211,16 @@ h5 {
         width: 300px;
     }
 
+<<<<<<< HEAD
     #logoCircle {
         width: 100px;
         height: 100px;
     }
 
     #titleName{
+=======
+    #titleName {
+>>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
         padding-left: 0px;
         font-size: 20px;
     }
@@ -200,10 +239,16 @@ h5 {
         padding-right: 50px;
     }
 
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 @media screen and (max-width: 395px) {
 
+<<<<<<< HEAD
     #overviewStatus {
         font-size: small;
     }
@@ -217,6 +262,8 @@ h5 {
         height: 60px;
     }
 
+=======
+>>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
     #description {
         padding-left: 18px;
         margin-top: 30px;
@@ -232,6 +279,7 @@ h5 {
         font-size: 25px;
     }
 
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 290px) {
@@ -243,7 +291,24 @@ h5 {
     #logoCircle {
         width: 100px;
         height: 100px;
+=======
+    .row {
+        font-size: small;
     }
+
+    .h2 {
+        font-size: 25px;
+>>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
+    }
+
+    .rounded-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 290px) {
 
     #backdrop {
         max-width: 220px;
@@ -256,5 +321,14 @@ h5 {
 
     #sidedrop {
         width: 260px;
+    }
+
+    .row {
+        font-size: small;
+    }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
     }
 }
