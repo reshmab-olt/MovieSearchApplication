@@ -80,7 +80,6 @@ h5 {
     font-size: 25px;
 }
 
-<<<<<<< HEAD
 #overviewStatus {
     margin-right: -5px;
     margin-left: -5px;
@@ -90,8 +89,6 @@ h5 {
     padding-left: 160px;
 }
 
-=======
->>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
 .movie-detail {
     background-color: #232323;
     padding: 30px;
@@ -113,16 +110,12 @@ h5 {
     }
 }
 
-<<<<<<< HEAD
      @media screen and (max-width: 822px) {
 
     #logoCircle{
         width: 100px;
         height: 100px;
     }
-=======
-@media screen and (max-width: 822px) {
->>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
 
     #titleName {
         padding-left: 70px;
@@ -145,14 +138,11 @@ h5 {
 
 @media screen and (max-width: 766px) {
 
-<<<<<<< HEAD
     #logoCircle{
         width: 90px;
         height: 90px;
     }
 
-=======
->>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
     #titleName {
         padding-left: 70px;
         font-size: 23px;
@@ -176,14 +166,11 @@ h5 {
         margin-left: 30px;
     }
 
-<<<<<<< HEAD
     #logoCircle {
         width: 100px;
         height: 100px;
     }
 
-=======
->>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
     #titleName {
         padding-left: 30px;
         font-size: 30px;
@@ -211,16 +198,12 @@ h5 {
         width: 300px;
     }
 
-<<<<<<< HEAD
     #logoCircle {
         width: 100px;
         height: 100px;
     }
 
     #titleName{
-=======
-    #titleName {
->>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
         padding-left: 0px;
         font-size: 20px;
     }
@@ -248,7 +231,6 @@ h5 {
 
 @media screen and (max-width: 395px) {
 
-<<<<<<< HEAD
     #overviewStatus {
         font-size: small;
     }
@@ -262,8 +244,6 @@ h5 {
         height: 60px;
     }
 
-=======
->>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
     #description {
         padding-left: 18px;
         margin-top: 30px;
@@ -279,7 +259,6 @@ h5 {
         font-size: 25px;
     }
 
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 290px) {
@@ -291,14 +270,6 @@ h5 {
     #logoCircle {
         width: 100px;
         height: 100px;
-=======
-    .row {
-        font-size: small;
-    }
-
-    .h2 {
-        font-size: 25px;
->>>>>>> 823e5ebe09b628dda9a781686db34d6189977177
     }
 
     .rounded-circle {
