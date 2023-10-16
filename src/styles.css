@@ -26,12 +26,6 @@ input[type="checkbox"] {
     width: fit-content;
 }
 
-header {
-    background-color: #2b2626de !important;
-    box-sizing: border-box;
-    width: 100%;
-}
-
 main {
     height: 580px;
     margin: 0;
@@ -56,12 +50,18 @@ main {
     color: #fff;
 }
 
+#searchButton:hover {
+
+    color: #000;
+}
+
 #searchButton {
     background: #ddd;
     font-size: 20px;
     border-radius: 0 10px 10px 0;
     border: none;
-    background-color: #0d0c0e;
+    background-color: #777777;
+
     color: #fff;
     cursor: pointer;
     margin-left: 0;
@@ -88,15 +88,14 @@ main {
 
 .filters p {
     margin-right: 15px;
-    font-weight: 900;
-    color: rgb(250, 225, 4);
+    font-weight: 200;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 15px;
+    font-variant: small-caps;
 }
 
-.header {
-    background-color: rgb(22, 20, 20);
-}
+
 
 .movie-container {
     display: inline-block;
@@ -161,8 +160,8 @@ main {
 .logo-filters {
     display: flex;
     justify-content: center;
-    background-color: rgb(48, 43, 40);
     padding-bottom: 10px;
+    background: linear-gradient(to bottom, #000000, #222222, #000000);
 }
 
 .search-box {
@@ -176,7 +175,7 @@ main {
 }
 
 .filters p:hover {
-    color: rgb(241, 186, 4);
+    color: #f2ff00;
 }
 
 .application {
@@ -202,17 +201,25 @@ main {
     cursor: pointer;
 }
 
+.pagination-container {
+    background-color: #f0dfdf
+}
+
 .pageButtons {
     padding: 10px 15px;
     border: none;
     border-radius: none !important;
     font-weight: 600;
     margin: 3px;
-    color: #cb8cca;
+    color: #ce91cd;
+}
+
+.movie-image:hover {
+    cursor: pointer;
 }
 
 .active-page {
-    background-color: #cb8cca;
+    background-color: #ce91cd;
     color: #fff;
 }
 
@@ -299,14 +306,12 @@ a:hover {
         margin-right: 10px;
     }
 
-
     .filters {
         justify-content: center;
     }
 
     .more-filters p {
         font-size: smaller;
-
         padding: 2px;
     }
 
