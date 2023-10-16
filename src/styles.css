@@ -233,6 +233,7 @@ a:hover {
     background-color: #eee4e4;
     font-family: 'Cabin Condensed', sans-serif;
     font-size: large;
+    padding: 50px 100px;
 }
 
 .about-application p{
