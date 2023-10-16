@@ -1,46 +1,21 @@
-$("#searchButton").click(function (e) {
-    e.preventDefault();
-    const searchQuery = $('#searchInput').val();
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchQuery}`;
-    fetchResults(url, 0, 1);
-});
 
 const apiKey = 'b31738b39a9616ae7b1e0f4528fb1985';
 
 let currentActivePage = 1;
-let totalPages = 500;
 
-function getGenre() {}
 
-function fetchResults(url, sliceStart, page) {
-    console.log(url);
-    finalUrl = url + `&page=${page}`;
-    console.log(finalUrl);
-    $.ajax({
-        url: finalUrl,
-        datatype: 'json',
-        success: function (data) {
-            results = data.results;
-            totalResultsLength = data.total_results;
-            createButtons(url, totalPages, totalResultsLength);
-            displayResults(results, sliceStart);
-        },
-        error: function (error) {
-            console.error('Error fetching data:', error);
-            alert('No results');
-        }
-    });
-}
 
-function createButtons(url, totalPages, totalResultsLength) {
+function createButtons(url, totalPages) {
     const movieResultsContainer = $('.search-results');
-    movieResultsContainer.empty();
     const paginationContainer = $('.pagination-container');
+    movieResultsContainer.empty();
     paginationContainer.empty();
 
     const maxVisibleButtons = 5;
     const currentPage = currentActivePage;
-
+    if (totalPages > 500) {
+        totalPages = 500;
+    }
     if (totalPages > maxVisibleButtons) {
         let startPage = Math.max(currentPage - Math.floor(maxVisibleButtons / 2), 1);
         let endPage = Math.min(startPage + maxVisibleButtons - 1, totalPages);
@@ -132,13 +107,14 @@ function onPageNumberClick(url) {
 }
 
 function displayResults(results, sliceStart) {
-
     const movieResultsContainer = $('.search-results');
+
     slicedResult = results.slice(sliceStart, sliceStart + 10)
     if (slicedResult.length === 0) {
 
         alert('No Results!!!')
-        movieResultsContainer.empty(); const paginationContainer = $('.pagination-container');
+        movieResultsContainer.empty();
+        const paginationContainer = $('.pagination-container');
         paginationContainer.empty();
         return;
     } else {
@@ -161,6 +137,25 @@ function displayResults(results, sliceStart) {
     }
 
 }
+
+function fetchResults(url, sliceStart, page) {
+    finalUrl = url + `&page=${page}`;
+    $.ajax({
+        url: finalUrl,
+        datatype: 'json',
+        success: function (data) {
+            results = data.results
+            totalResultsLength = Math.round((data.total_results / 10) / 2)
+            createButtons(url, totalResultsLength);
+            displayResults(results, sliceStart);
+        },
+        error: function (error) {
+            console.error('Error fetching data:', error);
+            alert('No results');
+        }
+    });
+}
+
 const moreElement = document.querySelector('#more');
 moreElement.addEventListener('click', function () {
     const moreFilters = document.querySelector('.more-filters');
@@ -202,4 +197,11 @@ $(document).on('click', '.movie-title, .movie-image', function () {
 $('#carousel').on('click', function () {
     const moreFilters = document.querySelector('.more-filters');
     moreFilters.style.display = 'none';
+});
+
+$("#searchButton").click(function (e) {
+    e.preventDefault();
+    const searchQuery = $('#searchInput').val();
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchQuery}`;
+    fetchResults(url, 0, 1);
 });
