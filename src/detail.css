@@ -9,7 +9,7 @@ span#titleValue {
     margin: 0;
 }
 
-.m-0 {
+#titleName {
     color: #fff;
     font-weight: 900;
 }
@@ -46,11 +46,6 @@ h5 {
     margin-left: 9px;
 }
 
-.row {
-    margin-right: -5px;
-    margin-left: -5px;
-}
-
 .btn {
     padding: 6px 16px;
     font-size: 18px;
@@ -65,6 +60,11 @@ h5 {
 .heading-bold {
     font-weight: bold;
     font-size: 25px;
+}
+
+#overviewStatus {
+    margin-right: -5px;
+    margin-left: -5px;
 }
 
 #description {
@@ -107,7 +107,7 @@ h5 {
 
      @media screen and (max-width: 822px) {
 
-    .rounded-circle {
+    #logoCircle{
         width: 100px;
         height: 100px;
     }
@@ -128,7 +128,7 @@ h5 {
 
 @media screen and (max-width: 766px) {
 
-    .rounded-circle {
+    #logoCircle{
         width: 90px;
         height: 90px;
     }
@@ -149,7 +149,7 @@ h5 {
         margin-left: 30px;
     }
 
-    .rounded-circle {
+    #logoCircle {
         width: 100px;
         height: 100px;
     }
@@ -176,7 +176,7 @@ h5 {
         width: 300px;
     }
 
-    .rounded-circle {
+    #logoCircle {
         width: 100px;
         height: 100px;
     }
@@ -204,15 +204,15 @@ h5 {
 
 @media screen and (max-width: 395px) {
 
-    .row {
+    #overviewStatus {
         font-size: small;
     }
 
-    .h2 {
+    #titleValue{
         font-size: 25px;
     }
 
-    .rounded-circle {
+    #logoCircle {
         width: 60px;
         height: 60px;
     }
@@ -236,11 +236,11 @@ h5 {
 
 @media screen and (max-width: 290px) {
 
-    .row {
+    #overviewStatus {
         font-size: small;
     }
 
-    .rounded-circle {
+    #logoCircle {
         width: 100px;
         height: 100px;
     }
