@@ -5,6 +5,23 @@ body {
     margin: 0;
 }
 
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+span#titleValue {
+    margin-left: 8px;
+}
+
 .poster img {
     width: 100%;
     border-radius: 8px;
@@ -26,40 +43,56 @@ body {
     margin-bottom: 10px;
 }
 
+.h5,
+h5 {
+    margin-left: 9px;
+}
+
+.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
 .btn {
     padding: 6px 16px;
     font-size: 18px;
+    margin-left: 10px;
 }
 
 .summary-heading {
     font-size: 24px;
     margin-bottom: 20px;
 }
-.heading-bold{
+
+.heading-bold {
     font-weight: bold;
     font-size: 25px;
 }
+
 #backdrop {
     float: left;
-    max-width: 360px; 
+    max-width: 360px;
     border-radius: 8px;
 }
+
 .col-md-8 {
     padding-left: 30px;
 }
+
 .movie-detail {
-    background-color: #232323; 
+    background-color: #232323;
     padding: 30px;
     border-radius: 15px;
 }
 
 .header {
-    background-color: rgb(107, 19, 19);
+    background-color: rgb(66, 35, 51);
 }
+
 #sidedrop {
     max-width: 100%;
     height: 300px;
-    border-radius: 8px; 
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover; 
+    object-fit: cover;
 }
