@@ -73,8 +73,8 @@ main {
     padding-bottom: 0;
 }
 
-#HR{
-    margin:20px 50px;
+.about-application hr {
+    margin: 20px 50px;
 }
 
 .form-check {
@@ -121,6 +121,7 @@ main {
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
+    cursor: pointer;
 }
 
 .footer-content {
@@ -147,10 +148,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-}
-
-a:hover {
-    text-decoration: none;
 }
 
 .logo {
@@ -202,42 +199,57 @@ a:hover {
     font-size: larger;
     font-weight: 700;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .pageButtons {
-    height: max-content;
+    padding: 10px 15px;
+    border: none;
+    border-radius: none !important;
+    font-weight: 600;
+    margin: 3px;
+    color: #cb8cca;
+}
+
+.active-page {
+    background-color: #cb8cca;
+    color: #fff;
 }
 
 .search-filters {
     display: flex;
 }
 
-.powerful-sort-content{
+.powerful-sort-content {
     text-align: center;
 }
 
-.movie-details-content{
+.movie-details-content {
     text-align: center;
 }
 
-.search-content{
+.search-content {
     text-align: center;
 }
 
-.application-descriptions{
+.application-descriptions {
     display: flex;
     justify-content: space-between;
 }
 
-.about-application{
+.about-application {
     background-color: #eee4e4;
     font-family: 'Cabin Condensed', sans-serif;
     font-size: large;
     padding: 50px 100px;
 }
 
-.about-application p{
+.about-application p {
     text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 @media (max-width :1210px) {
@@ -253,26 +265,23 @@ a:hover {
     .logo {
         justify-content: center;
     }
-
 }
 
 @media (max-width :850px) {
     .search-filters {
         display: block;
-
     }
 
     .filters {
         justify-content: center;
     }
+
+    .about-application {
+        padding: 20px 10px;
+    }
 }
 
 @media (max-width :550px) {
-    .filters p {
-        font-size: 12px;
-        margin-right: 10px;
-    }
-
     input {
         font-size: 15px;
         border-style: none;
@@ -285,23 +294,34 @@ a:hover {
         display: block;
     }
 
+    .filters p {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+
     .filters {
         justify-content: center;
     }
 
     .more-filters p {
         font-size: smaller;
-       
+
         padding: 2px;
     }
-    .more-filters{
+
+    .more-filters {
         height: 240px;
         padding-left: 5px;
     }
 
-    .application-descriptions{
+    .about-application {
+        padding: 30px 20px;
+    }
+
+    .application-descriptions {
         display: block;
-        
+
     }
 }
 
@@ -317,14 +337,15 @@ a:hover {
         font-size: 8px;
         margin-right: 5px;
     }
+
     .more-filters p {
         font-size: x-small;
         padding: 0;
     }
-    .more-filters{
+
+    .more-filters {
         height: 170px;
         padding-left: 5px;
         width: 150px;
     }
 }
-
