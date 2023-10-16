@@ -2,6 +2,24 @@ span#titleValue {
     margin-left: 8px;
 }
 
+#backdrop {
+    float: left;
+    max-width: 360px;
+    border-radius: 8px;
+}
+
+#sidedrop {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+#description {
+    padding-left: 160px;
+}
+
 .main-container {
     background-color: #000;
     color: #fff;
@@ -67,10 +85,6 @@ h5 {
     font-size: 25px;
 }
 
-#description {
-    padding-left: 160px;
-}
-
 .movie-detail {
     background-color: #232323;
     padding: 30px;
@@ -81,36 +95,18 @@ h5 {
     background-color: rgb(66, 35, 51);
 }
 
-#backdrop {
-    float: left;
-    max-width: 360px;
-    border-radius: 8px;
-}
-
-#sidedrop {
-    max-width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-}
-
 @media screen and (max-width: 915px) {
 
     #titleName {
         font-size: 30px;
     }
-    #titleValue{
+
+    #titleValue {
         font-size: 23px;
     }
 }
 
-     @media screen and (max-width: 822px) {
-
-    .rounded-circle {
-        width: 100px;
-        height: 100px;
-    }
+@media screen and (max-width: 822px) {
 
     #titleName {
         padding-left: 70px;
@@ -124,14 +120,14 @@ h5 {
     #description {
         padding-left: 170px;
     }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 766px) {
-
-    .rounded-circle {
-        width: 90px;
-        height: 90px;
-    }
 
     #titleName {
         padding-left: 70px;
@@ -141,17 +137,19 @@ h5 {
     #description {
         padding-left: 0px;
     }
-    
-}@media screen and (max-width: 600px) {
+
+    .rounded-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
 
     img {
         width: 500px;
         margin-left: 30px;
-    }
-
-    .rounded-circle {
-        width: 100px;
-        height: 100px;
     }
 
     #titleName {
@@ -168,6 +166,11 @@ h5 {
     #sidedrop {
         margin-left: 0;
     }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -176,12 +179,7 @@ h5 {
         width: 300px;
     }
 
-    .rounded-circle {
-        width: 100px;
-        height: 100px;
-    }
-
-    #titleName{
+    #titleName {
         padding-left: 0px;
         font-size: 20px;
     }
@@ -200,22 +198,14 @@ h5 {
         padding-right: 50px;
     }
 
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 @media screen and (max-width: 395px) {
-
-    .row {
-        font-size: small;
-    }
-
-    .h2 {
-        font-size: 25px;
-    }
-
-    .rounded-circle {
-        width: 60px;
-        height: 60px;
-    }
 
     #description {
         padding-left: 18px;
@@ -232,18 +222,22 @@ h5 {
         font-size: 25px;
     }
 
-}
-
-@media screen and (max-width: 290px) {
-
     .row {
         font-size: small;
     }
 
-    .rounded-circle {
-        width: 100px;
-        height: 100px;
+    .h2 {
+        font-size: 25px;
     }
+
+    .rounded-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 290px) {
 
     #backdrop {
         max-width: 220px;
@@ -256,5 +250,14 @@ h5 {
 
     #sidedrop {
         width: 260px;
+    }
+
+    .row {
+        font-size: small;
+    }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
     }
 }
