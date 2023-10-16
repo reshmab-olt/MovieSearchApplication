@@ -33,6 +33,7 @@ a:hover {
     background-color: #232323;
     padding: 30px;
     border-radius: 15px;
+
 }
 
 .tagline {
@@ -66,7 +67,7 @@ h5 {
     font-size: 25px;
 }
 
-.col-md-8 {
+#description {
     padding-left: 160px;
 }
 
@@ -94,8 +95,166 @@ h5 {
     object-fit: cover;
 }
 
-@media screen and (max-width: 769px) {
-    .col-md-8 {
+@media screen and (max-width: 915px) {
+
+    #titleName {
+        font-size: 30px;
+    }
+    #titleValue{
+        font-size: 23px;
+    }
+}
+
+     @media screen and (max-width: 822px) {
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    #titleName {
+        padding-left: 70px;
+        font-size: 20px;
+    }
+
+    #titleValue {
+        font-size: 18px;
+    }
+
+    #description {
+        padding-left: 170px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+
+    .rounded-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    #titleName {
+        padding-left: 70px;
+        font-size: 23px;
+    }
+
+    #description {
+        padding-left: 0px;
+    }
+    
+}@media screen and (max-width: 600px) {
+
+    img {
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    #titleName {
         padding-left: 30px;
+        font-size: 30px;
+    }
+
+    #description {
+        text-align: center;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+    #sidedrop {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    img {
+        width: 300px;
+    }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    #titleName{
+        padding-left: 0px;
+        font-size: 20px;
+    }
+
+    #sidedrop {
+        margin-left: 0;
+    }
+
+    #description {
+        padding-left: 10px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #backdrop {
+        padding-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+
+    .row {
+        font-size: small;
+    }
+
+    .h2 {
+        font-size: 25px;
+    }
+
+    .rounded-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    #description {
+        padding-left: 18px;
+        margin-top: 30px;
+    }
+
+    #backdrop {
+        max-width: 250px;
+        padding-right: 0;
+        margin-left: 2px;
+    }
+
+    #titleValue {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 290px) {
+
+    .row {
+        font-size: small;
+    }
+
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    #backdrop {
+        max-width: 220px;
+        padding-right: 63px;
+    }
+
+    #titleValue {
+        font-size: 19px;
+    }
+
+    #sidedrop {
+        width: 260px;
     }
 }
