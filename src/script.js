@@ -170,18 +170,18 @@ moreElement.addEventListener('click', () => {
 });
 
 $('.sort').on('click', function () {
-    const currentPage = 1;
-    currentActivePage = 1;
-    const genre = Math.round($(this).attr('value'));
-    filterByGenre(genre, currentPage);
-  });
-  
-  $('.filter-options').on('click', function () {
-    const currentPage = 1;
-    currentActivePage = 1;
-    const genre = $(this).attr('value');
-    filterByGenre(genre, currentPage);
-  });
+  const currentPage = 1;
+  currentActivePage = 1;
+  const genre = Math.round($(this).attr('value'));
+  filterByGenre(genre, currentPage);
+});
+
+$('.filter-options').on('click', function () {
+  const currentPage = 1;
+  currentActivePage = 1;
+  const genre = $(this).attr('value');
+  filterByGenre(genre, currentPage);
+});
 
 $(document).on('click', '.movie-title, .movie-image', function () {
   const movieId = $(this).data('movie-id');
