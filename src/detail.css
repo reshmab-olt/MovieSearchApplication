@@ -1,25 +1,22 @@
-body {
+span#titleValue {
+    margin-left: 8px;
+}
+
+.main-container {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
-a {
+.m-0 {
     color: #fff;
-}
-
-a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-h1 {
     font-weight: 900;
 }
 
-span#titleValue {
-    margin-left: 8px;
+a:hover {
+    color: #ebe1e1;
+    text-decoration: none;
 }
 
 .poster img {
@@ -69,14 +66,8 @@ h5 {
     font-size: 25px;
 }
 
-#backdrop {
-    float: left;
-    max-width: 360px;
-    border-radius: 8px;
-}
-
 .col-md-8 {
-    padding-left: 30px;
+    padding-left: 160px;
 }
 
 .movie-detail {
@@ -89,10 +80,22 @@ h5 {
     background-color: rgb(66, 35, 51);
 }
 
+#backdrop {
+    float: left;
+    max-width: 360px;
+    border-radius: 8px;
+}
+
 #sidedrop {
     max-width: 100%;
     height: 300px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     object-fit: cover;
+}
+
+@media screen and (max-width: 769px) {
+    .col-md-8 {
+        padding-left: 30px;
+    }
 }

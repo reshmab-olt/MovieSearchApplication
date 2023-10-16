@@ -160,10 +160,6 @@ const moreElement = document.querySelector('#more');
 moreElement.addEventListener('click', function () {
     const moreFilters = document.querySelector('.more-filters');
     moreFilters.style.display = 'block';
-    $(document.body).on('focusin', function () {
-        console.log('Displaying more filters');
-        moreFilters.style.display = 'none';
-    });
 });
 
 $('.sort').on('click', function () {
@@ -184,6 +180,8 @@ function filterByGenre(selectedGenre, currentPage) {
     if (selectedGenre) {
         const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${selectedGenre}`;
         fetchResults(url, 0, currentPage);
+        const moreFilters = document.querySelector('.more-filters');
+        moreFilters.style.display = 'none';
     }
 }
 
