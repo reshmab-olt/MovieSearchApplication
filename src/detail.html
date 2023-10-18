@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Details</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Add a custom CSS file for additional styling -->
 </head>
 
-<body class ="main-container">
-    <header class="bg-dark text-white text-center ">
-        <div class="row py-3 header">
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-3" id="logo">
-                        <img src="logo.png" class="rounded-circle" id="logoCircle" height="70" alt="image">
-                    </div>
-                    <div class="col-md-9 ">
-                        <a href="index.html">
-                            <h1 class="m-0 mt-3" id="titleName">Film Buff</h1>
-                        </a>
-                    </div>
+<body class="main-container bg-light">
+    <header class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row align-items-left">
+                <div class="col-md-3">
+                    <img src="logo.png" class="rounded-circle" height="70" alt="image">
+                </div>
+                <div class="col-md-9">
+                    <a href="index.html" class="text-decoration-none" id="heading">
+                        <h1 class="m-0 mt-3 text-white ">Film Buff</h1>
+                    </a>
                 </div>
             </div>
         </div>
@@ -38,19 +36,16 @@
                     <h5 class="mb-3"><span id="originalTitleValue"></span></h5>
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <p class="mb-2"><span class="bold">Adult:</span> <span id="adultValue"></span></p>
-                            <p class="mb-2"><span class="bold">Genres:</span> <span id="genreValue"></span></p>
-                            <p class="mb-2"><span class="bold">Total Vote:</span> <span id="totalVoting"></span></p>
-                            <p class="mb-2"><span class="bold">Language:</span> <span id="originalLanguageValue"></span>
-                            </p>
+                            <p class="mb-2"><span class="font-weight-bold">Adult:</span> <span id="adultValue"></span></p>
+                            <p class="mb-2"><span class="font-weight-bold">Genres:</span> <span id="genreValue"></span></p>
+                            <p class="mb-2"><span class="font-weight-bold">Total Vote:</span> <span id="totalVoting"></span></p>
+                            <p class="mb-2"><span class="font-weight-bold">Language:</span> <span id="originalLanguageValue"></span></p>
                         </div>
                         <div class="col-md-6">
-                            <p class="mb-2"><span class="bold">Popularity:</span> <span id="popularity"></span></p>
-                            <p class="mb-2"><span class="bold">Release Date:</span> <span id="releaseDateValue"></span>
-                            </p>
-                            <p class="mb-2"><span class="bold">Average Votings:</span> <span id="averageVoting"></span>
-                            </p>
-                            <p class="mb-2"><span class="bold">ID:</span> <span id="idValue"></span></p>
+                            <p class="mb-2"><span class="font-weight-bold">Popularity:</span> <span id="popularity"></span></p>
+                            <p class="mb-2"><span class="font-weight-bold">Release Date:</span> <span id="releaseDateValue"></span></p>
+                            <p class="mb-2"><span class="font-weight-bold">Average Votings:</span> <span id="averageVoting"></span></p>
+                            <p class="mb-2"><span class="font-weight-bold">ID:</span> <span id="idValue"></span></p>
                         </div>
                     </div>
 
@@ -62,7 +57,7 @@
         <section class="text-white p-4 bg-dark mb-5 rounded">
             <div class="row" id="overviewStatus">
                 <div class="col-md-6">
-                    <p class="mb-2"><span class="bold">Overview:</span> <span id="overviewValue"></span></p>
+                    <p class="mb-2"><span class="font-weight-bold">Overview:</span> <span id="overviewValue"></span></p>
                 </div>
                 <div class="col-md-6 text-center">
                     <img id="sidedrop" alt="Backdrop Image" class="img-fluid rounded">

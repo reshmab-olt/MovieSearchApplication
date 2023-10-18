@@ -1,4 +1,4 @@
-span#titleValue {
+/* span#titleValue {
     margin-left: 8px;
 }
 
@@ -302,4 +302,9 @@ h5 {
         width: 100px;
         height: 100px;
     }
-}
+} */
+.custom-logo {
+    max-width: 90px; /* Adjust this value as needed */
+    height: 90px;
+  }
+  
