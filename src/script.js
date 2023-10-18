@@ -39,65 +39,66 @@ function createButtons(url, totalPage) {
   if (totalPage > 500) {
     totalPages = 500;
   }
-  if (totalPages > maxVisibleButtons) {
-    let startPage = Math.max(currentPage - Math.floor(maxVisibleButtons / 2), 1);
-    const endPage = Math.min(startPage + maxVisibleButtons - 1, totalPages);
+  if (totalPage > 1 && totalPages !== 1) {
+    if (totalPages > maxVisibleButtons) {
+      let startPage = Math.max(currentPage - Math.floor(maxVisibleButtons / 2), 1);
+      const endPage = Math.min(startPage + maxVisibleButtons - 1, totalPages);
 
-    if (endPage - startPage < maxVisibleButtons) {
-      startPage = endPage - maxVisibleButtons + 1;
-    }
-
-    if (startPage > 1) {
-      const firstPageButton = $('<button>').addClass('pageButtons').attr('value', 0).html('1');
-      paginationContainer.append(firstPageButton);
-    }
-
-    if (startPage > 2) {
-      const ellipsisStart = $('<span>').html('...');
-      paginationContainer.append(ellipsisStart);
-    }
-
-    for (let i = startPage; i <= endPage; i += 1) {
-      sliceStart = 0;
-      if (i % 2 === 0) {
-        sliceStart += 10;
+      if (endPage - startPage < maxVisibleButtons) {
+        startPage = endPage - maxVisibleButtons + 1;
       }
-      const pageSelect = $('<button>').addClass('pageButtons').attr('value', sliceStart).html(i);
 
-      if (i === currentPage) {
-        pageSelect.addClass('active-page');
+      if (startPage > 1) {
+        const firstPageButton = $('<button>').addClass('pageButtons').attr('value', 0).html('1');
+        paginationContainer.append(firstPageButton);
       }
-      paginationContainer.append(pageSelect);
-    }
 
-    if (endPage < totalPages - 1) {
-      const ellipsisEnd = $('<span>').html('...');
-      paginationContainer.append(ellipsisEnd);
-    }
+      if (startPage > 2) {
+        const ellipsisStart = $('<span>').html('...');
+        paginationContainer.append(ellipsisStart);
+      }
 
-    if (endPage < totalPages) {
-      const lastPage = totalPages;
-      sliceStart = 0;
-      if (totalPages % 2 === 0) {
-        sliceStart += 10;
+      for (let i = startPage; i <= endPage; i += 1) {
+        sliceStart = 0;
+        if (i % 2 === 0) {
+          sliceStart += 10;
+        }
+        const pageSelect = $('<button>').addClass('pageButtons').attr('value', sliceStart).html(i);
+
+        if (i === currentPage) {
+          pageSelect.addClass('active-page');
+        }
+        paginationContainer.append(pageSelect);
       }
-      const lastPageButton = $('<button>').addClass('pageButtons').attr('value', sliceStart).html(lastPage);
-      paginationContainer.append(lastPageButton);
-    }
-  } else {
-    for (let i = 1; i <= totalPages; i += 1) {
-      sliceStart = 0;
-      if (i % 2 === 0) {
-        sliceStart += 10;
+
+      if (endPage < totalPages - 1) {
+        const ellipsisEnd = $('<span>').html('...');
+        paginationContainer.append(ellipsisEnd);
       }
-      const pageSelect = $('<button>').addClass('pageButtons').attr('value', sliceStart).html(i);
-      if (i === currentPage) {
-        pageSelect.addClass('activePage');
+
+      if (endPage < totalPages) {
+        const lastPage = totalPages;
+        sliceStart = 0;
+        if (totalPages % 2 === 0) {
+          sliceStart += 10;
+        }
+        const lastPageButton = $('<button>').addClass('pageButtons').attr('value', sliceStart).html(lastPage);
+        paginationContainer.append(lastPageButton);
       }
-      paginationContainer.append(pageSelect);
+    } else {
+      for (let i = 1; i <= totalPages; i += 1) {
+        sliceStart = 0;
+        if (i % 2 === 0) {
+          sliceStart += 10;
+        }
+        const pageSelect = $('<button>').addClass('pageButtons').attr('value', sliceStart).html(i);
+        if (i === currentPage) {
+          pageSelect.addClass('activePage');
+        }
+        paginationContainer.append(pageSelect);
+      }
     }
   }
-
   onPageNumberClick(url);
 }
 

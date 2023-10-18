@@ -110,12 +110,7 @@ h5 {
     }
 }
 
-     @media screen and (max-width: 822px) {
-
-    #logoCircle{
-        width: 100px;
-        height: 100px;
-    }
+@media screen and (max-width: 822px) {
 
     #titleName {
         padding-left: 70px;
@@ -130,18 +125,14 @@ h5 {
         padding-left: 170px;
     }
 
-    .rounded-circle {
+    .logo-image {
         width: 100px;
         height: 100px;
     }
+
 }
 
 @media screen and (max-width: 766px) {
-
-    #logoCircle{
-        width: 90px;
-        height: 90px;
-    }
 
     #titleName {
         padding-left: 70px;
@@ -152,7 +143,7 @@ h5 {
         padding-left: 0px;
     }
 
-    .rounded-circle {
+    .logo-image {
         width: 90px;
         height: 90px;
     }
@@ -164,11 +155,6 @@ h5 {
     img {
         width: 500px;
         margin-left: 30px;
-    }
-
-    #logoCircle {
-        width: 100px;
-        height: 100px;
     }
 
     #titleName {
@@ -186,10 +172,11 @@ h5 {
         margin-left: 0;
     }
 
-    .rounded-circle {
+    .logo-image {
         width: 100px;
         height: 100px;
     }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -198,12 +185,7 @@ h5 {
         width: 300px;
     }
 
-    #logoCircle {
-        width: 100px;
-        height: 100px;
-    }
-
-    #titleName{
+    #titleName {
         padding-left: 0px;
         font-size: 20px;
     }
@@ -227,6 +209,11 @@ h5 {
         height: 100px;
     }
 
+    .logo-image {
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 @media screen and (max-width: 395px) {
@@ -235,13 +222,8 @@ h5 {
         font-size: small;
     }
 
-    #titleValue{
+    #titleValue {
         font-size: 25px;
-    }
-
-    #logoCircle {
-        width: 60px;
-        height: 60px;
     }
 
     #description {
@@ -259,6 +241,11 @@ h5 {
         font-size: 25px;
     }
 
+    .logo-image {
+        width: 60px;
+        height: 60px;
+    }
+
 }
 
 @media screen and (max-width: 290px) {
@@ -267,12 +254,7 @@ h5 {
         font-size: small;
     }
 
-    #logoCircle {
-        width: 100px;
-        height: 100px;
-    }
-
-    .rounded-circle {
+    .logo-image {
         width: 60px;
         height: 60px;
     }
@@ -298,7 +280,7 @@ h5 {
         font-size: small;
     }
 
-    .rounded-circle {
+    .logo-image {
         width: 100px;
         height: 100px;
     }
